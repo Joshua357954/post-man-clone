@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Post Man</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+	<section class="section-one">
+	
+	<h2 class="title"> Postman <input type="checkbox" class='status'></h2>
+
+	<div class="all-tabs">
+		<input class="api-name" data-name="tab1" placeholder="Endpoint" />
+		<!-- <p class="api-name">create message </p>	
+		<p class="api-name" data-name="tab1">save </p>
+		<p class="api-name">create opi</p> -->	
+	</div>
+
+	<div class="tab-container">
+		
+		<div class="search-bar"> 
+
+			<!-- <div >GET </div> -->
+			<select class="select"name="api-verbs">
+				<option value='get'>GET</option>
+				<option value='post'>POST</option>
+				<option value='put'>PUT</option>
+				<option value='delete'>DEL</option>	
+			</select>
+			<input type="url" class="apiUrl" placeholder="Enter Url ..">
+			<button class="send-btn">Send</button>
+
+		</div>
+
+	<!-- ######################################## -->
+
+			<div class="params">
+
+				<h3>Params <span class='span-one'>+</span> <span class='spa-two'>Reset</span></h3>
+
+				<div class="key-value" data-id='0'>
+					<input data-id='0' type="text" name="key" autocomplete="off"  placeholder="key">
+
+					<input data-id='0' type="text" name="value" autocomplete="off" placeholder="value">
+				</div>
+
+			</div>
+
+		</div>
+	
+	</section>
+
+	<section>
+		<div class="result">
+		
+			<div>My response</div>
+
+			<pre class="show-result"> </pre>
+
+		</div>
+	</section>
+	
+</body>
+
+<script src="./main.js"></script>
+
+</html>
